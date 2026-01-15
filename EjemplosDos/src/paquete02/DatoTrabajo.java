@@ -20,9 +20,9 @@ public class DatoTrabajo {
         public static String obtenerNombreEmpresa(){
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese nombre de la empresa");
-        String nombre = entrada.nextLine();
+        String empresa = entrada.nextLine();
         
-        return nombre;
+        return empresa;
     }
     
     public static String obtenerDireccionEmpresa(){
