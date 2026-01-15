@@ -6,6 +6,7 @@
 package ejemplos;
 
 import java.security.SecureRandom;
+import java.util.Scanner;
 // import java.security.*;
 
 /**
@@ -13,30 +14,36 @@ import java.security.SecureRandom;
  * @author reroes
  */
 public class Ejemplo02 {
-    
+
     public static void main(String[] args) {
         // TODO code application logic here
-        int valorA = obtenerNumero(); // 3
-        int valorB = obtenerNumero(); // 2
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.print("Ingrese el límite: ");
+        int n = entrada.nextInt();
+        entrada.nextLine(); 
+        
+        int valorA = obtenerNumero(n); // 3
+        int valorB = obtenerNumero(n); // 2
         int suma = obtnerSuma(valorA, valorB);
-        System.out.printf("La suma de %d + %d es igual a: %d\n", 
+        System.out.printf("La suma de %d + %d es igual a: %d\n",
                 valorA,
                 valorB,
                 suma);
     }
-    
-    public static int obtenerNumero() {
+
+    public static int obtenerNumero(int a) {
         // objeto generador de números aleatorios
         SecureRandom numerosAleatorios = new SecureRandom();
-        
+
         // Returns a pseudorandom, uniformly distributed int value 
         // between 0 (inclusive) and the specified value (exclusive)
-        int valorAleatorio = numerosAleatorios.nextInt(5);
+        int valorAleatorio = numerosAleatorios.nextInt(a);
         return valorAleatorio;
     }
-    
-    public static int obtnerSuma(int a, int b){
+
+    public static int obtnerSuma(int a, int b) {
         return a + b;
     }
-    
+
 }
