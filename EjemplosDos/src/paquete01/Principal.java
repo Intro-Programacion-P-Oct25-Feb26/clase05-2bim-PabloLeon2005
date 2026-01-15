@@ -43,3 +43,25 @@ public class Principal {
     }
     
 }
+/*
+
+Generar una solución que le permita al usuario ingresar por teclado sus 
+identificativos, como serían su nombre, apellido y ciudad importando estos datos 
+desde otro paquete y otra clase hacia el main; Además con ayuda de un ciclo 
+repetitivo se le debe solicitar que ingrese cuatro notas obtenidas, de igual 
+manera estas deberán ser importadas desde otro paquete y otra clase hacia 
+el main y se las deberá guardar dentro de un arrelo unidimensional, este 
+arreglo debe ser enviado a una función que con ayuda de un ciclo repetitivo
+lea los datos de cada espacio del arreglo, los sume dentro de una variable
+y divida la variable para la longitud de las notas ingresadas (que en este caso
+sería cuatro)importando estos datos desde otro paquete y otra clase hacia el 
+main finalmente desde el main se debe recopilar la información e
+imprimir todo con un mensaje que debería quedar de la siguiente manera: 
+
+Los datos ingresados son:
+Nombre: Pablo
+Apellido: Leon
+Ciudad: Loja
+Promedio: 10,00
+
+*/
